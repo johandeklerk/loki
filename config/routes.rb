@@ -5,9 +5,8 @@ Loki::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'api#index'
 
-  scope ':version' do
-    resources :artists do
-    end
+  scope :format => true, :constraints => {:format => 'json'} do
+    resources :artists
   end
 
   # Example of regular route:

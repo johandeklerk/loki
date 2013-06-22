@@ -1,6 +1,6 @@
 class ApiController < ApplicationController
 
   def index
-    render :json => {:error => "URL must be in the format VERSION/RESOURCE"}
+    render :json => {:error => 'URL must be in the format VERSION/(RESOURCE)'}, :status => 400
   end
 end
