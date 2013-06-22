@@ -33,7 +33,7 @@ group :doc do
 end
 
 group :test do
-  gem 'rspec'
+  gem 'cucumber-api-steps', :require => false
 end
 
 # Use ActiveModel has_secure_password
@@ -47,3 +47,5 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'rails-api'
