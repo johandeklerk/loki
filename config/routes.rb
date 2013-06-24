@@ -4,6 +4,7 @@ Loki::Application.routes.draw do
       cache as: 'v1' do
         root 'api#index'
         resources :artists
+        resources :albums
       end
     end
   end
