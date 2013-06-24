@@ -30,5 +30,5 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'rails-api'
-#gem 'hashie'
+gem 'rails-api', '~> 0.1.0'
+gem 'api-versions', '~> 1.2.0'
