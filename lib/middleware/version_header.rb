@@ -8,9 +8,8 @@ module Loki
       end
 
       def call(env)
-        unless env['HTTP_ACCEPT'] =~ /vnd\.loki/
-          env['HTTP_ACCEPT'] = 'application/json,application/vnd.loki+json;'
-        end
+        unversioned = 'application/json,application/vnd.loki+json;'
+        env['HTTP_ACCEPT'] = env.has_key?('HTTP_API_VERSION') ? "#{unversioned}version=#{env['HTTP_API_VERSION']}" : unversioned
         @app.call(env)
       end
     end
