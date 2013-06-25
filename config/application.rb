@@ -1,6 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
+require File.expand_path('../../lib/middleware/version_header', __FILE__)
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -20,6 +21,7 @@ module Loki
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
+    config.middleware.use Middleware::VersionHeader
     config.action_controller.action_on_unpermitted_parameters = :raise
   end
 end

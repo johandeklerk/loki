@@ -1,34 +1,34 @@
 class Api::V1::AlbumsController < ApplicationController
 
   def index
-    albums = Artist.all
-    artists.empty? ? render(:json => nil, :status => :no_content) : render(:json => artists, :status => :ok)
+    albums = Album.all
+    albums.empty? ? render(:json => nil, :status => :no_content) : render(:json => albums, :status => :ok)
   end
 
   def show
-    artist = Artist.find(params[:id])
-    render(:json => artist, :status => :ok)
+    album = Album.find(params[:id])
+    render(:json => album, :status => :ok)
   end
 
   def create
-    Artist.create(params[:artist])
+    Album.create(params[:artist])
     render :json => nil, :status => :created
   end
 
   def update
-    Artist.find(params[:id]).update(params[:artist])
+    Album.find(params[:id]).update(params[:artist])
     render(:json => nil, :status => :no_content)
   end
 
   def destroy
-    artist = Artist.find(params[:id])
-    artist.destroy!
+    album = Album.find(params[:id])
+    album.destroy!
     render(:json => nil, :status => :no_content)
   end
 
   private
 
-  def artist_params
-    params.require(:artist).permit(:name)
+  def album_params
+    params.require(:album).permit(:title, :release_date, :isbn, :artist_id)
   end
 end
