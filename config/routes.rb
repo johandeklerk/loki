@@ -20,4 +20,6 @@ Loki::Application.routes.draw do
       end
     end
   end
+
+  match '*url', via: [:get, :post, :put, :delete], :to => 'api#routing_error'
 end

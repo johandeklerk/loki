@@ -6,6 +6,7 @@ class ApplicationController < ActionController::API
   rescue_from Exception, :with => :default_error
   rescue_from ActiveRecord::UnknownAttributeError, :with => :attribute_error
   rescue_from ActiveRecord::RecordNotFound, :with => :record_not_found
+  rescue_from ActionController::RoutingError, :with => :routing_error
 
   private
 
@@ -22,5 +23,9 @@ class ApplicationController < ActionController::API
 
   def record_not_found
     render :json => [], :status => :not_found
+  end
+
+  def routing_error
+    render :json => nil, :status => :bad_request
   end
 end
