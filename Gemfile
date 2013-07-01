@@ -11,8 +11,11 @@ group :doc do
   gem 'sdoc', '~> 0.3.20', require: false
 end
 
+group :development, :test do
+  gem 'factory_girl_rails', '~> 4.2.1'
+end
+
 group :test do
-  gem 'factory_girl', '~> 4.2.0'
   gem 'rspec-rails', '~> 2.0'
   gem 'cucumber-api-steps', '~> 0.10', :require => false
 end

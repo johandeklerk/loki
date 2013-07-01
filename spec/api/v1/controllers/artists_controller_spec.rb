@@ -6,6 +6,10 @@ describe Api::V1::ArtistsController do
     @options = [{}, 'HTTP_ACCEPT' => 'application/vnd.loki+json; version=1', :format => :json]
   end
 
+  after do
+    response.should be_valid_json
+  end
+
   describe "GET 'index'" do
     it 'should be successful' do
       get '/artists', *@options
@@ -14,8 +18,17 @@ describe Api::V1::ArtistsController do
   end
 
   describe "GET 'show'" do
-    it 'should be successful' do
+    before do
+      @artist = create(:artist, name: "John")
+    end
 
+    after do
+      #Artist.delete_all
+    end
+
+    it 'should be successful' do
+      get "/artists/#{@artist.id}"
+      response.should be_successful
     end
   end
 end

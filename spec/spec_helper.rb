@@ -1,8 +1,11 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV["RAILS_ENV"] ||= 'test'
+
 require File.expand_path("../../config/environment", __FILE__)
+
 require 'rspec/rails'
 require 'rspec/autorun'
+require 'factory_girl'
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
@@ -14,6 +17,31 @@ $:.unshift File.dirname(__FILE__)
 # Checks for pending migrations before tests are run.
 # If you are not using ActiveRecord, you can remove this line.
 ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
+
+# Monkey patch some helpers to make life easier
+class ActionDispatch::TestResponse
+  def with_symbolized_headers(&block)
+    headers.nil? ? false : block.call(headers.transform_keys { |key| key.to_s.downcase.gsub(/-/, '_').to_sym })
+  end
+
+  def valid_json_headers?(headers)
+    headers.has_key?(:content_type) && headers[:content_type] =~ %r{application/json}
+  end
+
+  def with_json_parsed_body(&block)
+    if body && body.length >= 2
+      block.call(JSON.parse(body.gsub(/\s/, '')))
+    end
+  end
+
+  def valid_json_body?(body)
+    body.is_a?(Hash) || body.is_a?(Array)
+  end
+
+  def valid_json?
+    with_symbolized_headers { |headers| valid_json_headers?(headers) ? with_json_parsed_body { |body| valid_json_body?(body) } : false }
+  end
+end
 
 RSpec.configure do |config|
   # ## Mock Framework
@@ -42,4 +70,8 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
+
+  config.include FactoryGirl::Syntax::Methods
+
+
 end
