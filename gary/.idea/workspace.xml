@@ -11,7 +11,7 @@
     <file path="/album_representer.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373233301904" ignored="false" />
     <file path="$PROJECT_DIR$/../mary/app/controllers/api/v1/albums_controller.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373233593098" ignored="false" />
     <file path="/albums_controller.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373230779864" ignored="false" />
-    <file path="$PROJECT_DIR$/../mary/.idea/workspace.xml" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373233883640" ignored="false" />
+    <file path="$PROJECT_DIR$/../mary/.idea/workspace.xml" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373233991570" ignored="false" />
     <file path="$PROJECT_DIR$/../mary/app/models/album.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373232102770" ignored="false" />
     <file path="/album.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373231061198" ignored="false" />
     <file path="$PROJECT_DIR$/../mary/Gemfile" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373231460461" ignored="false" />
@@ -31,6 +31,8 @@
     <file path="/publisher.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373233756578" ignored="false" />
     <file path="$PROJECT_DIR$/../mary/app/representers/track_representer.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373233847866" ignored="false" />
     <file path="/track_representer.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373233830868" ignored="false" />
+    <file path="$PROJECT_DIR$/../mary/.gitignore" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373233988534" ignored="false" />
+    <file path="/.gitignore" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373233988534" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
