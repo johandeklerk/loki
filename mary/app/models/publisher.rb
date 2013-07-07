@@ -8,6 +8,7 @@ class Publisher
   validates_length_of :name, :within => 1..100, message: 'field length must be within 1 to 100'
 
   has_many :albums
+  has_and_belongs_to_many :artists
 
   index({name: 1}, {unique: true})
 end

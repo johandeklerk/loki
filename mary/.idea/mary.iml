@@ -37,6 +37,7 @@
     <orderEntry type="library" scope="PROVIDED" name="faker (v1.1.2, rbenv: 2.0.0-p195) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="gherkin (v2.12.0, rbenv: 2.0.0-p195) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hike (v1.2.3, rbenv: 2.0.0-p195) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="hooks (v0.3.1, rbenv: 2.0.0-p195) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.6.4, rbenv: 2.0.0-p195) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v1.4.2, rbenv: 2.0.0-p195) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="json (v1.8.0, rbenv: 2.0.0-p195) [gem]" level="application" />
@@ -61,6 +62,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v3.12.2, rbenv: 2.0.0-p195) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="representable (v1.5.3, rbenv: 2.0.0-p195) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="roar (v0.11.18, rbenv: 2.0.0-p195) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="roar-rails (v0.1.1, rbenv: 2.0.0-p195) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec (v2.13.0, rbenv: 2.0.0-p195) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-core (v2.13.1, rbenv: 2.0.0-p195) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v2.13.0, rbenv: 2.0.0-p195) [gem]" level="application" />
@@ -69,6 +71,7 @@
     <orderEntry type="library" scope="PROVIDED" name="sdoc (v0.3.20, rbenv: 2.0.0-p195) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v2.10.0, rbenv: 2.0.0-p195) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v2.0.0, rbenv: 2.0.0-p195) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="test_xml (v0.1.6, rbenv: 2.0.0-p195) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.18.1, rbenv: 2.0.0-p195) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thread_safe (v0.1.0, rbenv: 2.0.0-p195) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v1.4.1, rbenv: 2.0.0-p195) [gem]" level="application" />

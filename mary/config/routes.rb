@@ -6,21 +6,15 @@ Mary::Application.routes.draw do
     version 1 do
       cache as: 'v1' do
 
-        concern :show_genres do
-          resources :genres, only: [:index, :show]
-        end
-
         concern :searchable do
           collection { get 'search' }
         end
 
-        resources :artists, concerns: [:show_genres, :searchable]
-        resources :albums, concerns: [:show_genres, :searchable] do
-
-        end
-        resources :genres
-        resources :publishers
-        resources :tracks, concerns: [:show_genres, :searchable]
+        resources :artists, concerns: :searchable
+        resources :albums, concerns: :searchable
+        resources :genres, concerns: :searchable
+        resources :publishers, concerns: :searchable
+        resources :tracks, concerns: :searchable
       end
     end
   end

@@ -6,6 +6,7 @@ publisher = Publisher.create!(name: 'somepub')
 
 Artist.delete_all
 artist = Artist.create!(name: 'someart')
+artist1 = Artist.create!(name: 'someart11')
 
 Genre.delete_all
 genre = Genre.create!(name: 'somegen')
@@ -14,4 +15,4 @@ Track.delete_all
 track = Track.create!(title: 'sometra', length: '1:50')
 
 Album.delete_all
-Album.create!(title: 'somealbum', isbn: '9780672317248', published_date: Time.now, publisher: publisher, artists: [artist], genres: [genre], tracks: [track])
+Album.create!(title: 'somealbum', isbn: '9780672317248', published_date: Time.now, publisher: publisher, artists: [artist,artist1], genres: [genre], tracks: [track])

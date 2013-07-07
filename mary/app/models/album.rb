@@ -10,6 +10,8 @@ class Album
   field :isbn, type: String
   field :published_date, type: DateTime
 
+  #attr_accessor :id, :title, :cover, :isbn, :publisher, :published_date, :artists, :tracks, :genres
+
   validates_presence_of :title, :isbn, :publisher, :published_date, :artists, :tracks, :genres, message: 'required field'
   validates_format_of :isbn, with: /^(97(8|9))?\d{9}(\d|X)$/, :multiline => true, message: 'only valid ISBN format'
   validates_length_of :isbn, within: 10..13, message: 'field length must be within 10 to 13'

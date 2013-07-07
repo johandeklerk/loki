@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::API
   include ActionController::MimeResponds
+  include Roar::Rails::ControllerAdditions
 
   respond_to :json
 
@@ -11,6 +12,7 @@ class ApplicationController < ActionController::API
 
   def index
     models = @model.all
+    models = models.collect { |model| JSON.parse(model.extend("#{@model_name.to_s}Representer".constantize).to_json) }
     models.empty? ? render_json(nil, :no_content) : render_json(models, :ok)
   end
 
@@ -52,9 +54,9 @@ class ApplicationController < ActionController::API
 
   # Finds the model associated with current controller
   def set_model
-    model_name = self.class.to_s.split('::').last.gsub('Controller', '').singularize
-    @params_model = model_name.downcase.to_sym
-    @model = model_name.constantize
+    @model_name = self.class.to_s.split('::').last.gsub('Controller', '').singularize
+    @params_model = @model_name.downcase.to_sym
+    @model = @model_name.constantize
   end
 
   def render_json(json = {}, status = :ok)
