@@ -2,7 +2,7 @@ class Api::V1::ArtistsController < ApplicationController
 
   def index
     artists = Artist.all
-    artists.empty? ? render(:json => [], :status => :no_content) : render(:json => artists, :status => :ok)
+    artists.empty? ? render(:json => [], :status => :ok) : render(:json => artists, :status => :ok)
   end
 
   def show

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130624224039) do
+ActiveRecord::Schema.define(version: 20130702003358) do
 
   create_table "albums", force: true do |t|
     t.string   "title",        null: false
@@ -23,7 +23,24 @@ ActiveRecord::Schema.define(version: 20130624224039) do
   end
 
   create_table "artists", force: true do |t|
-    t.string   "name",       null: false
+    t.string   "name",        null: false
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "custom_attributes", force: true do |t|
+    t.string   "name",              null: false
+    t.string   "value",             null: false
+    t.integer  "attributable_id"
+    t.string   "attributable_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "genres", force: true do |t|
+    t.string   "name",        null: false
+    t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

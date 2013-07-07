@@ -19,11 +19,11 @@ describe Api::V1::ArtistsController do
 
   describe "GET 'show'" do
     before do
-      @artist = create(:artist, name: "John")
+      @artist = FactoryGirl.create(:artist)
     end
 
     after do
-      #Artist.delete_all
+      #@artist.delete
     end
 
     it 'should be successful' do

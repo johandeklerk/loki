@@ -5,7 +5,7 @@ require File.expand_path("../../config/environment", __FILE__)
 
 require 'rspec/rails'
 require 'rspec/autorun'
-require 'factory_girl'
+require 'factory_girl_rails'
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
@@ -19,15 +19,24 @@ $:.unshift File.dirname(__FILE__)
 ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
 
 # Monkey patch some helpers to make life easier
-class ActionDispatch::TestResponse
+module JSONHelper
+
+  # Symbolize the keys for the headers hash
+  # @return [Hash], the headers hash with symbolized keys
   def with_symbolized_headers(&block)
     headers.nil? ? false : block.call(headers.transform_keys { |key| key.to_s.downcase.gsub(/-/, '_').to_sym })
   end
 
+  # Helper to determine whether the content type header contain a valid application/json string
+  # @param [Hash], headers
+  # @return [Boolean]
   def valid_json_headers?(headers)
     headers.has_key?(:content_type) && headers[:content_type] =~ %r{application/json}
   end
 
+  # Helper to check and parse JSON body
+  # @return [Boolean]
+  # @raise RSpec::Expectations::ExpectationNotMetError
   def with_json_parsed_body(&block)
     if body && body.length >= 2
       block.call(JSON.parse(body.gsub(/\s/, '')))
@@ -39,8 +48,12 @@ class ActionDispatch::TestResponse
   end
 
   def valid_json?
-    with_symbolized_headers { |headers| valid_json_headers?(headers) ? with_json_parsed_body { |body| valid_json_body?(body) } : false }
+    with_symbolized_headers { |headers| valid_json_headers?(headers) } if with_json_parsed_body { |body| valid_json_body?(body) }
   end
+end
+
+class ActionDispatch::TestResponse
+  include JSONHelper
 end
 
 RSpec.configure do |config|
@@ -72,6 +85,5 @@ RSpec.configure do |config|
   config.order = "random"
 
   config.include FactoryGirl::Syntax::Methods
-
-
+  config.include JSONHelper
 end

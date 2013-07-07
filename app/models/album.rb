@@ -1,5 +1,7 @@
 class Album < ActiveRecord::Base
   belongs_to :artist
 
-  validates_presence_of :title, :release_date, :isbn, :artist_id
+  has_many :custom_attributes, :as => :attributable
+
+  validates_presence_of :title, :artist_id
 end
