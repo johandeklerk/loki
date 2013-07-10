@@ -12,7 +12,6 @@ class ApplicationController < ActionController::API
 
   def index
     models = @model.all
-    models = models.collect { |model| JSON.parse(model.extend("#{@model_name.to_s}Representer".constantize).to_json) }
     models.empty? ? render_json(nil, :no_content) : render_json(models, :ok)
   end
 
@@ -59,8 +58,8 @@ class ApplicationController < ActionController::API
     @model = @model_name.constantize
   end
 
-  def render_json(json = {}, status = :ok)
-    render :json => json, :status => status
+  def render_json(object = nil, status = :ok)
+    render :json => object, :root => false, :status => status
   end
 
   # Log exception class, message and backtrace for debugging

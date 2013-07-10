@@ -11,7 +11,11 @@ Mary::Application.routes.draw do
         end
 
         resources :artists, concerns: :searchable
-        resources :albums, concerns: :searchable
+        resources :albums, concerns: :searchable do
+          resources :tracks
+          resources :artists, :only => [:index, :show]
+          resources :genres, :only => [:index, :show]
+        end
         resources :genres, concerns: :searchable
         resources :publishers, concerns: :searchable
         resources :tracks, concerns: :searchable
