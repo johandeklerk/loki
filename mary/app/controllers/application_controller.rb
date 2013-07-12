@@ -1,7 +1,5 @@
 class ApplicationController < ActionController::API
   include ActionController::MimeResponds
-  include Roar::Rails::ControllerAdditions
-
   respond_to :json
 
   rescue_from Exception, :with => :default_error

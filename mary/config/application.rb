@@ -36,8 +36,5 @@ module Mary
 
     # Remove non-api related or unnecessary middleware
     config.middleware.delete 'ActionDispatch::Static'
-
-    config.representer.default_url_options = {:host => '127.0.0.1:5000'}
-    config.representer.represented_formats = [:json]
   end
 end

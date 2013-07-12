@@ -17,7 +17,6 @@ class Album
   validates_length_of :isbn, within: 10..13, message: 'field length must be within 10 to 13'
   validates_length_of :title, :publisher, :within => 1..100, message: 'field length must be within 1 to 100'
 
-
   # Relationships
   belongs_to :publisher, index: true
   has_and_belongs_to_many :artists, index: true
