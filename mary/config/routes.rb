@@ -12,15 +12,9 @@ Mary::Application.routes.draw do
           collection { get 'search' }
         end
 
-        resources :artists, concerns: :searchable
-        resources :albums, concerns: :searchable do
-          resources :tracks
-          resources :artists, :only => [:index, :show]
-          resources :genres, :only => [:index, :show]
+        %w{artists albums genres publishers tracks}.each do |resource_name|
+          resources resource_name.to_sym, concerns: :searchable
         end
-        resources :genres, concerns: :searchable
-        resources :publishers, concerns: :searchable
-        resources :tracks, concerns: :searchable
       end
     end
   end

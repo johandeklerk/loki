@@ -2,28 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78a5c9dd-776d-423a-8839-38e6f575500e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../mary/app/serializers/links_serializer.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/README.rdoc" afterPath="$PROJECT_DIR$/../mary/README.rdoc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/app/serializers/album_serializer.rb" afterPath="$PROJECT_DIR$/../mary/app/serializers/album_serializer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/app/controllers/api_controller.rb" afterPath="$PROJECT_DIR$/../mary/app/controllers/api_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/../mary/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/app/serializers/artist_serializer.rb" afterPath="$PROJECT_DIR$/../mary/app/serializers/artist_serializer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/app/controllers/api/v1/artists_controller.rb" afterPath="$PROJECT_DIR$/../mary/app/controllers/api/v1/artists_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/app/serializers/genre_serializer.rb" afterPath="$PROJECT_DIR$/../mary/app/serializers/genre_serializer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/app/controllers/api/v1/genres_controller.rb" afterPath="$PROJECT_DIR$/../mary/app/controllers/api/v1/genres_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/app/serializers/publisher_serializer.rb" afterPath="$PROJECT_DIR$/../mary/app/serializers/publisher_serializer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/app/controllers/api/v1/publishers_controller.rb" afterPath="$PROJECT_DIR$/../mary/app/controllers/api/v1/publishers_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/db/seeds.rb" afterPath="$PROJECT_DIR$/../mary/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/app/serializers/track_serializer.rb" afterPath="$PROJECT_DIR$/../mary/app/serializers/track_serializer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/app/controllers/api/v1/tracks_controller.rb" afterPath="$PROJECT_DIR$/../mary/app/controllers/api/v1/tracks_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/app/models/user.rb" afterPath="$PROJECT_DIR$/../mary/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/config/routes.rb" afterPath="$PROJECT_DIR$/../mary/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../mary/.idea/workspace.xml" />
     </list>
     <ignored path="gary.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/application.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373585241254" ignored="false" />
-    <file path="/routes.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374438900088" ignored="false" />
+    <file path="/routes.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374443554030" ignored="false" />
     <file path="$PROJECT_DIR$/../mary/app/representers/album_representer.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373233305071" ignored="false" />
     <file path="/album_representer.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373233301904" ignored="false" />
     <file path="$PROJECT_DIR$/../mary/app/controllers/api/v1/albums_controller.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373233593098" ignored="false" />
@@ -33,7 +21,7 @@
     <file path="$PROJECT_DIR$/../mary/app/representers/artist_representer.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373233384246" ignored="false" />
     <file path="/artist_representer.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373233378065" ignored="false" />
     <file path="/seeds.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374439416828" ignored="false" />
-    <file path="/application_controller.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374443286243" ignored="false" />
+    <file path="/application_controller.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374443853584" ignored="false" />
     <file path="$PROJECT_DIR$/../mary/app/representers/genre_representer.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373233709573" ignored="false" />
     <file path="/genre_representer.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373233709573" ignored="false" />
     <file path="$PROJECT_DIR$/../mary/app/representers/publisher_representer.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373233718884" ignored="false" />
@@ -47,7 +35,7 @@
     <file path="/development.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373584561235" ignored="false" />
     <file path="/artist.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373589753589" ignored="false" />
     <file path="/artists_controller.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373589865145" ignored="false" />
-    <file path="/Dummy.txt" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374443113102" ignored="false" />
+    <file path="/Dummy.txt" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374443398120" ignored="false" />
     <file path="$PROJECT_DIR$/../../t2.services/app/version3/models/mongo/stored_udr_usage.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373624527286" ignored="false" />
     <file path="/stored_udr_usage.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373624510800" ignored="false" />
     <file path="$PROJECT_DIR$/../../t2.services/config/torquebox.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373623500504" ignored="false" />
@@ -69,7 +57,7 @@
     <file path="/user.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374441676215" ignored="false" />
     <file path="/token_controller.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374440331211" ignored="false" />
     <file path="/temp.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374438503088" ignored="false" />
-    <file path="/README.rdoc" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374441487127" ignored="false" />
+    <file path="/README.rdoc" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374444380762" ignored="false" />
     <file path="/api_controller.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374441880505" ignored="false" />
     <file path="/artist_serializer.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374442586512" ignored="false" />
     <file path="/album_serializer.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374442878671" ignored="false" />

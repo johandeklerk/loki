@@ -1,26 +1,22 @@
-= Loki
+= Mary
 
-The application is in two parts:
+* The REST API
 
-* Mary, the REST API
+== Requirements
 
-* Gary, the frontend application example
+* Ruby 2.0
+* MongoDB
+* Ubuntu (Not tested on any other platform, but should work)
 
-= Requirements
+== Installation
 
-Ruby 2.0
-
-MongoDB
-
-= Installation
-
-Clone the repo. Change into mary then
+Clone the repo. cd into mary then
 
     bundle install
+    rake db:migrate
+    rake db:seed
 
-Same goes for gary.
-
-= Mary
+== Running
 
     rails s -p 5000
 
@@ -38,8 +34,14 @@ In subsequent requests pass along this HTTP header:
 
 Once the token expires, a 401 - Unauthorized will be returned. Simply request a new token with Basic auth to continue.
 
-== Gary
+== Searching
 
-    rails s
+Pass any valid Mongo search string in the HTTP QUERY header to: /resource/search
 
+Eg.
 
+    QUERY: {"title": "somealbumtitle"}
+    GET http://localhost:5000/albums/search
+
+    QUERY: {"published_date": {"$gte": ISODate("2013-07-01")}}
+    GET http://localhost:5000/albums/search

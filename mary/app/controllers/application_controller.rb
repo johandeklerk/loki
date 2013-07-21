@@ -2,8 +2,6 @@ class ApplicationController < ActionController::API
   include ActionController::MimeResponds
   include ActionController::HttpAuthentication::Token::ControllerMethods
 
-  attr_accessor :current_user
-
   respond_to :json
 
   rescue_from Exception, :with => :default_error
@@ -80,18 +78,18 @@ class ApplicationController < ActionController::API
   # Logs exceptions and render a default JSON error message
   def default_error(exception)
     log_exception(exception)
-    render :json => {:error => 'Server error'}, :status => :internal_server_error
+    render_json({:error => 'Server error'}, :internal_server_error)
   end
 
   # Logs attribute errors and renders a default JSON error message
   def attribute_error(exception)
     log_exception(exception)
-    render :json => {:error => development? ? exception.message : 'Attribute error'}, :status => :not_implemented
+    render_json({:error => development? ? exception.message : 'Attribute error'}, :not_implemented)
   end
 
   # Renders a empty JSON array with a 404
   def record_not_found
-    render :json => [], :status => :not_found
+    render_json([], :not_found)
   end
 
   # Renders a standard routing error in JSON
