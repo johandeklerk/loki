@@ -10,7 +10,7 @@ class User
 
   def generate_token
     self.token = SecureRandom.hex
-    self.token_expires = Time.now + 1.minute
+    self.token_expires = Time.now + 1.hour
     self.save
   end
 end

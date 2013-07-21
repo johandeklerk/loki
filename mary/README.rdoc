@@ -32,9 +32,11 @@ Using HTTP Basic Auth (see db/seeds for default username & password):
 
 This provides you with a single access token that is valid for one hour.
 
-In all subsequent requests pass along this HTTP header:
+In subsequent requests pass along this HTTP header:
 
     Authorizarion: Token token=thetokenthatwasprovided
+
+Once the token expires, a 401 - Unauthorized will be returned. Simply request a new token with Basic auth to continue.
 
 == Gary
 
