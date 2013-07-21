@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68da6ad7-c789-48a0-ae5f-8fe364785392" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/serializers/links_serializer.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rdoc" afterPath="$PROJECT_DIR$/README.rdoc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/serializers/album_serializer.rb" afterPath="$PROJECT_DIR$/app/serializers/album_serializer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/serializers/artist_serializer.rb" afterPath="$PROJECT_DIR$/app/serializers/artist_serializer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/serializers/genre_serializer.rb" afterPath="$PROJECT_DIR$/app/serializers/genre_serializer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/serializers/publisher_serializer.rb" afterPath="$PROJECT_DIR$/app/serializers/publisher_serializer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/serializers/track_serializer.rb" afterPath="$PROJECT_DIR$/app/serializers/track_serializer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/artists_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/artists_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/genres_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/genres_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/publishers_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/publishers_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/tracks_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/tracks_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gary/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../gary/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -27,7 +22,7 @@
     <file path="/artists_controller_spec.rb" changelist="68da6ad7-c789-48a0-ae5f-8fe364785392" time="1372938797262" ignored="false" />
     <file path="/artist.rb" changelist="68da6ad7-c789-48a0-ae5f-8fe364785392" time="1373589753589" ignored="false" />
     <file path="/mongoid.yml" changelist="68da6ad7-c789-48a0-ae5f-8fe364785392" time="1372930129459" ignored="false" />
-    <file path="/Dummy.txt" changelist="68da6ad7-c789-48a0-ae5f-8fe364785392" time="1374441367798" ignored="false" />
+    <file path="/Dummy.txt" changelist="68da6ad7-c789-48a0-ae5f-8fe364785392" time="1374443113102" ignored="false" />
     <file path="$PROJECT_DIR$/../t2.services/app/version2/apis/mongo/udr_usage_api_version2.rb" changelist="68da6ad7-c789-48a0-ae5f-8fe364785392" time="1372940922609" ignored="false" />
     <file path="/udr_usage_api_version2.rb" changelist="68da6ad7-c789-48a0-ae5f-8fe364785392" time="1372940921585" ignored="false" />
     <file path="$PROJECT_DIR$/../t2.services/background/processors/udr_usage/find_or_create_stored_udr_usages.rb" changelist="68da6ad7-c789-48a0-ae5f-8fe364785392" time="1372940120660" ignored="false" />
@@ -62,7 +57,7 @@
     <file path="/publisher_spec.rb" changelist="68da6ad7-c789-48a0-ae5f-8fe364785392" time="1373215481081" ignored="false" />
     <file path="/track_spec.rb" changelist="68da6ad7-c789-48a0-ae5f-8fe364785392" time="1373217439317" ignored="false" />
     <file path="/tracks_controller_spec.rb" changelist="68da6ad7-c789-48a0-ae5f-8fe364785392" time="1373218616604" ignored="false" />
-    <file path="/application_controller.rb" changelist="68da6ad7-c789-48a0-ae5f-8fe364785392" time="1374440550655" ignored="false" />
+    <file path="/application_controller.rb" changelist="68da6ad7-c789-48a0-ae5f-8fe364785392" time="1374443286243" ignored="false" />
     <file path="/tracks_controller.rb" changelist="68da6ad7-c789-48a0-ae5f-8fe364785392" time="1373221651195" ignored="false" />
     <file path="/seeds.rb" changelist="68da6ad7-c789-48a0-ae5f-8fe364785392" time="1374439416828" ignored="false" />
     <file path="/album_representer.rb" changelist="68da6ad7-c789-48a0-ae5f-8fe364785392" time="1373488299103" ignored="false" />
@@ -124,24 +119,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="artist_serializer.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/serializers/artist_serializer.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="85" selection-start="276" selection-end="356" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="genre_serializer.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/serializers/genre_serializer.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="85" selection-start="275" selection-end="355" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="track_serializer.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/serializers/track_serializer.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -151,10 +128,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="publisher_serializer.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/serializers/publisher_serializer.rb">
+      <file leaf-file-name="artists_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/artists_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="90" selection-start="191" selection-end="276" vertical-scroll-proportion="0.0">
+            <state line="8" column="51" selection-start="166" selection-end="166" vertical-scroll-proportion="0.2">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="albums_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/albums_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="25" selection-start="196" selection-end="217" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="album_serializer.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/serializers/album_serializer.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="48" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tracks_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/tracks_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="34" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="publishers_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/publishers_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="25" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="genres_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/genres_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="25" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -163,43 +194,7 @@
       <file leaf-file-name="seeds.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="158" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="artists_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/artists_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="album_serializer.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/serializers/album_serializer.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="48" selection-start="601" selection-end="601" vertical-scroll-proportion="0.4">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spec_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="71" selection-start="2453" selection-end="2488" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="56" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0">
+            <state line="19" column="0" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -236,12 +231,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/album.rb" />
-        <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/token_controller.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/tokens_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/README.rdoc" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
@@ -252,6 +242,11 @@
         <option value="$PROJECT_DIR$/app/serializers/genre_serializer.rb" />
         <option value="$PROJECT_DIR$/app/serializers/publisher_serializer.rb" />
         <option value="$PROJECT_DIR$/app/serializers/track_serializer.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/v1/artists_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/v1/genres_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/v1/publishers_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/v1/tracks_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
       </list>
     </option>
   </component>
@@ -1243,7 +1238,11 @@
       <created>1374441370925</created>
       <updated>1374441370925</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Serializer links">
+      <created>1374443115717</created>
+      <updated>1374443115717</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1312,7 +1311,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add User &amp; tokens" />
+    <option name="LAST_COMMIT_MESSAGE" value="Serializer links" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1331,6 +1330,7 @@
     <MESSAGE value="Fix some bugs" />
     <MESSAGE value="Authentication &amp; readme" />
     <MESSAGE value="Add User &amp; tokens" />
+    <MESSAGE value="Serializer links" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1338,44 +1338,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/http_authentication.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="9" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/tokens_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.rdoc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="576" selection-end="576" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="55" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="7" selection-start="1984" selection-end="1984" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1390,20 +1355,6 @@
     <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="70" column="71" selection-start="2453" selection-end="2488" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/artists_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="158" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1436,6 +1387,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/serializers/album_serializer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="48" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/albums_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="25" selection-start="196" selection-end="217" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/genres_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="25" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/publishers_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="25" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/tracks_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="34" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="4" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
@@ -1443,9 +1429,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/serializers/album_serializer.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="48" selection-start="601" selection-end="601" vertical-scroll-proportion="0.4">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/artists_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="51" selection-start="166" selection-end="166" vertical-scroll-proportion="0.2">
           <folding />
         </state>
       </provider>

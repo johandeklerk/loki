@@ -44,11 +44,10 @@ class ApplicationController < ActionController::API
     render_json(:id => model.id.to_s)
   end
 
-  # TODO: This search method is potentially very unsafe. It takes any JSON string and gives it to Mongo without any checks. But... its kinda cool :)
   def search
     return render_json({:error => 'Specify the query in the HTTP QUERY header'}, :internal_server_error) unless request.headers.key?('HTTP_QUERY')
-    albums = Album.collection.find(JSON.parse(request.headers['HTTP_QUERY']))
-    render_json(albums, :ok)
+    models = @model.collection.find(JSON.parse(request.headers['HTTP_QUERY']))
+    render_json(models, :ok)
   end
 
   private
