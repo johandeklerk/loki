@@ -6,6 +6,7 @@
 
 * Ruby 2.0
 * MongoDB
+* Memcache
 * Ubuntu (Not tested on any other platform, but should work)
 
 == Installation

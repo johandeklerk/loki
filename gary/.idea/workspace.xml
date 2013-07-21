@@ -4,6 +4,7 @@
     <list default="true" id="78a5c9dd-776d-423a-8839-38e6f575500e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/Gemfile.lock" afterPath="$PROJECT_DIR$/../mary/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/Gemfile" afterPath="$PROJECT_DIR$/../mary/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/README.rdoc" afterPath="$PROJECT_DIR$/../mary/README.rdoc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/app/models/album.rb" afterPath="$PROJECT_DIR$/../mary/app/models/album.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/app/serializers/album_serializer.rb" afterPath="$PROJECT_DIR$/../mary/app/serializers/album_serializer.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/app/models/artist.rb" afterPath="$PROJECT_DIR$/../mary/app/models/artist.rb" />
@@ -46,7 +47,7 @@
     <file path="/development.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373584561235" ignored="false" />
     <file path="/artist.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374447212382" ignored="false" />
     <file path="/artists_controller.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373589865145" ignored="false" />
-    <file path="/Dummy.txt" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374444403401" ignored="false" />
+    <file path="/Dummy.txt" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374447385801" ignored="false" />
     <file path="$PROJECT_DIR$/../../t2.services/app/version3/models/mongo/stored_udr_usage.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373624527286" ignored="false" />
     <file path="/stored_udr_usage.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373624510800" ignored="false" />
     <file path="$PROJECT_DIR$/../../t2.services/config/torquebox.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373623500504" ignored="false" />
@@ -68,7 +69,7 @@
     <file path="/user.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374441676215" ignored="false" />
     <file path="/token_controller.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374440331211" ignored="false" />
     <file path="/temp.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374438503088" ignored="false" />
-    <file path="/README.rdoc" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374444380762" ignored="false" />
+    <file path="/README.rdoc" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374447407141" ignored="false" />
     <file path="/api_controller.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374441880505" ignored="false" />
     <file path="/artist_serializer.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374447304725" ignored="false" />
     <file path="/album_serializer.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374446943519" ignored="false" />
