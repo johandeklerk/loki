@@ -1,12 +1,16 @@
 class ApplicationController < ActionController::API
   include ActionController::MimeResponds
+  include ActionController::HttpAuthentication::Token::ControllerMethods
+
+  attr_accessor :current_user
+
   respond_to :json
 
   rescue_from Exception, :with => :default_error
   rescue_from ActionController::RoutingError, :with => :routing_error
 
   # Abstract controller methods to DRY up the concrete controllers
-  before_filter :set_model
+  before_filter :authenticate_with_token, :set_model
 
   def index
     models = @model.all
@@ -48,6 +52,13 @@ class ApplicationController < ActionController::API
   end
 
   private
+
+  def authenticate_with_token
+    authenticate_or_request_with_http_token do |token, _|
+      user = User.where(:token => token, :token_expires.gte => Time.now).first
+      user ? user.token == token : false
+    end
+  end
 
   # Finds the model associated with current controller
   def set_model

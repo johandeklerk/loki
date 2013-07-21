@@ -2,6 +2,8 @@ Mary::Application.routes.draw do
 
   root 'api#routing_error'
 
+  resource :token, :only => [:show]
+
   api vendor_string: 'mary', default_version: 1, path: '/' do
     version 1 do
       cache as: 'v1' do
