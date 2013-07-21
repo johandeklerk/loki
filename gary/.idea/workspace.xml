@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78a5c9dd-776d-423a-8839-38e6f575500e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../mary/app/assets/images/.keep" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/Gemfile.lock" afterPath="$PROJECT_DIR$/../mary/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/Gemfile" afterPath="$PROJECT_DIR$/../mary/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/README.rdoc" afterPath="$PROJECT_DIR$/../mary/README.rdoc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/../mary/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/.idea/mary.iml" afterPath="$PROJECT_DIR$/../mary/.idea/mary.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/config/routes.rb" afterPath="$PROJECT_DIR$/../mary/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/db/seeds.rb" afterPath="$PROJECT_DIR$/../mary/db/seeds.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mary/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../mary/.idea/workspace.xml" />
     </list>
@@ -40,7 +33,7 @@
     <file path="/development.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373584561235" ignored="false" />
     <file path="/artist.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373589753589" ignored="false" />
     <file path="/artists_controller.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373589865145" ignored="false" />
-    <file path="/Dummy.txt" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374436351010" ignored="false" />
+    <file path="/Dummy.txt" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374440981589" ignored="false" />
     <file path="$PROJECT_DIR$/../../t2.services/app/version3/models/mongo/stored_udr_usage.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373624527286" ignored="false" />
     <file path="/stored_udr_usage.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373624510800" ignored="false" />
     <file path="$PROJECT_DIR$/../../t2.services/config/torquebox.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1373623500504" ignored="false" />
@@ -63,7 +56,7 @@
     <file path="/user.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374440590413" ignored="false" />
     <file path="/token_controller.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374440331211" ignored="false" />
     <file path="/temp.rb" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374438503088" ignored="false" />
-    <file path="/README.rdoc" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374440963855" ignored="false" />
+    <file path="/README.rdoc" changelist="78a5c9dd-776d-423a-8839-38e6f575500e" time="1374441221880" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

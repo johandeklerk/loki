@@ -1,4 +1,4 @@
-== Loki
+= Loki
 
 The application is in two parts:
 
@@ -6,12 +6,13 @@ The application is in two parts:
 
 * Gary, the frontend application example
 
-== Requirements
+= Requirements
 
 Ruby 2.0
+
 MongoDB
 
-== Installation
+= Installation
 
 Clone the repo. Change into mary then
 
@@ -19,9 +20,21 @@ Clone the repo. Change into mary then
 
 Same goes for gary.
 
-== Mary
+= Mary
 
     rails s -p 5000
+
+== Authentication
+
+Using HTTP Basic Auth (see db/seeds for default username & password):
+
+    GET http://localhost:5000/token
+
+This provides you with a single access token that is valid for one hour.
+
+In all subsequent requests pass along this HTTP header:
+
+    Authorizarion: Token token=thetokenthatwasprovided
 
 == Gary
 
