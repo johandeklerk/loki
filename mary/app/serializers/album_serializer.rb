@@ -7,10 +7,10 @@ class AlbumSerializer < ActiveModel::Serializer
   #has_many :genres
 
   def links
-    [{rel: :self, href: api_album_url(object)},
-     {rel: :publisher, href: api_publisher_url(object.publisher)},
-     {rel: :artists, href: object.artists.map { |artist| {href: api_artist_url(artist)} }},
-     {rel: :tracks, href: object.tracks.map { |track| {href: api_track_url(track)} }},
-     {rel: :genres, href: object.genres.map { |genre| {href: api_genre_url(genre)} }}]
+    [{rel: :self, href: api_album_url(object.cached)},
+     {rel: :publisher, href: api_publisher_url(object.cached_publisher)},
+     {rel: :artists, href: object.cached_artists.map { |artist| {href: api_artist_url(artist)} }},
+     {rel: :tracks, href: object.cached_tracks.map { |track| {href: api_track_url(track)} }},
+     {rel: :genres, href: object.cached_genres.map { |genre| {href: api_genre_url(genre)} }}]
   end
 end

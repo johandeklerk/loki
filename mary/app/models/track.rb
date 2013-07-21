@@ -16,4 +16,20 @@ class Track
   has_and_belongs_to_many :genres, index: true
 
   index({title: 1})
+
+  def cached
+    Rails.cache.fetch(self, expires_in: 2.minutes) { self }
+  end
+
+  def cached_albums
+    Rails.cache.fetch([self, 'albums'], expires_in: 2.minutes) { albums.to_a }
+  end
+
+  def cached_artists
+    Rails.cache.fetch([self, 'artists'], expires_in: 2.minutes) { artists.to_a }
+  end
+
+  def cached_genres
+    Rails.cache.fetch([self, 'genres'], expires_in: 2.minutes) { genres.to_a }
+  end
 end
